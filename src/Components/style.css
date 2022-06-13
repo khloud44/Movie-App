@@ -1,0 +1,65 @@
+/* -------------NavBar------------------- */
+.nav-link:hover{
+    color:#ff1648 !important;
+}
+i , .nav-link{
+    transition: all .7s;
+}
+i:hover{
+    color:#ff1648 !important;
+}
+/* -----------------Movie Card-------------------------- */
+.layer{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    background-color: rgba(33, 34, 37, 0.8);
+    visibility:hidden;
+    transition:  visibility .7s;
+    /* transition: all .5s; */
+    
+    
+}
+.card:hover .layer{
+    visibility:visible;
+    /* top:80%; */
+}
+.card{
+    overflow: hidden;
+    height:100%;
+    cursor: pointer;
+}
+.card span {
+    height:100%;
+    overflow: hidden;
+}
+.card img {
+    transition: all 1s;
+}
+.card:hover img{
+    transform:scale(1.1,1.1)
+}
+.rate{
+    position:absolute;
+    top : 3%;
+    right:-10px;
+    background-color: #003cff;
+    width:15%;
+    max-height:15%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .7s;
+    
+}
+/* --------------Search---------------------- */
+.search{
+    top:0px;
+    right:0px;
+    color:#003cff;
+    
+    /* border: 1px solid #003cff; */
+}

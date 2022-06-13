@@ -1,0 +1,8 @@
+.movieDetails{
+    background-size: contain;
+    background-attachment: fixed;
+    background-position:center center;
+    background-repeat: no-repeat;
+    box-shadow:inset 3em 3em 3em 3em rgba(0,0,0,.7);
+
+}
