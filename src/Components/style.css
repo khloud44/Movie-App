@@ -2,10 +2,13 @@
 .nav-link:hover{
     color:#ff1648 !important;
 }
+.navbar{
+    z-index:111111;
+}
 i , .nav-link{
     transition: all .7s;
 }
-i:hover{
+.icon:hover{
     color:#ff1648 !important;
 }
 /* -----------------Movie Card-------------------------- */
@@ -57,9 +60,10 @@ i:hover{
 }
 /* --------------Search---------------------- */
 .search{
-    top:0px;
-    right:0px;
-    color:#003cff;
-    
-    /* border: 1px solid #003cff; */
+    top:10px;
+    right:5%;   
+}
+/* --------------- Pagination----------------- */
+.page-item,.page-link{
+    cursor:pointer;
 }

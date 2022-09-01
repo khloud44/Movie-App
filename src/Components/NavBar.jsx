@@ -3,13 +3,14 @@ import React from "react"
 import { NavLink } from "react-router-dom";
 import './style.css'
 import logo from "../assets/images/9.png"
+import SearchMovie from "./SearchMovie";
 
 function NavBar(){
     // const Location = useLocation();
     // console.log(Location.pathname);
     return(
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100">
                 <div className="container-fluid">
                     <NavLink  className="navbar-brand text-light" to="/">
                         <img src={logo} alt="" width="40" height="34"/>

@@ -9,8 +9,8 @@ function MovieCard(props) {
                 <div className='rate mx-3'>{props.movie.vote_average}</div>
                 <div className="card-body">
                     <h6 className="card-title">{props.movie.title}</h6>
-                    <p className="card-text layer d-flex justify-content-center align-items-center">
-                        <button className="btn btn-translate border rounded-pill text-light"><i className="fa-solid fa-circle-play " ></i></button>
+                    <p className="card-text layer d-flex justify-content-center align-items-center ">
+                        <button className="btn btn-translate border rounded-pill text-light"><i className="fa-solid fa-circle-play icon" ></i></button>
                     </p>    
                 </div>
             </div>

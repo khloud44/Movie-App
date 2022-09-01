@@ -13,7 +13,7 @@ function MovieDetails(){
     useEffect(()=> {
         console.log("Hello");
         axiosInstance
-        .get(`/${params.id}`)
+        .get(`/movie/${params.id}`)
         .then(res => setMovieData(res.data))
         .catch(err => console.log(err))
         console.log(movieData);
@@ -26,17 +26,17 @@ function MovieDetails(){
     console.log(movieData);
     return(
         <DashboardLayout>
-            <div className="container-fluid">
-                <div className="container m-3">
+            <div className="container-fluid w-100" style={{backgroundImage:`https://image.tmdb.org/t/p/original/${movieData.poster_path}`}}>
+                <div className="container ">
                     <div className="row">
-                        <div className="col-md-6 d-flex justify-content-end">
+                        <div className="col-md-6 ">
                             <div className="p-3 text-end shadow text-center mb-1 ">
                                 <span><img src={`https://image.tmdb.org/t/p/w500/${movieData.poster_path}`} className="card-img-top w-75 rounded  my-1" alt="..."/></span>
                             </div>
                         </div>
                         <div className="col-md-6 d-flex flex-column justify-content-center">
                             <h3 className="mb-4 ">{movieData.original_title} <i className="fa-solid fa-heart text-light" onClick={()=>handlerFavorite}></i></h3>
-                            <div>
+                            <div className="d-flex text-aligne-center justify-content-center flex-wrap">
                                 {movieData.genres?.map(genre =>(
                                     <span className="p-2 border m-2 rounded-pill" key={genre.id}>{genre.name}</span>
                                 ))}    
