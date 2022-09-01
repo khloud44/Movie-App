@@ -8,29 +8,4 @@ const axiosInstance = axios.create({
     }
 });
 
-// axiosInstance.interceptors.request.use(
-//         (req) => {
-//             req.headers["Authorization"]= "Bearer hgfdsawertyuioilk,jmhngbfvdc54125656412";
-//             console.log(req);
-//         return req;
-//         },
-//         (err) => {
-//         return Promise.reject(err);
-//         }
-//     );
-    
-//     // For POST requests
-//     axiosInstance.interceptors.response.use(
-//         (res) => {
-//         // Add configurations here
-//         if (res.status === 201) {
-//             console.log('Posted Successfully');
-//         }
-//         return res;
-//         },
-//         (err) => {
-//         return Promise.reject(err);
-//         }
-//     );
-
 export default axiosInstance;

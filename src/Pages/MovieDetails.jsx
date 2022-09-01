@@ -8,7 +8,6 @@ import './pagesStyle.css'
 function MovieDetails(){
     const params=useParams();
     let [isFavourite ,setFavorite] = useState(false);
-    // const [isLoading , setIsLoading]=useState(false);
     const [movieData , setMovieData]= useState({});
     useEffect(()=> {
         console.log("Hello");

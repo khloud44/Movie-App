@@ -9,7 +9,6 @@ const navigate=useNavigate()
             <h5>Page Not Found</h5>
             <img src={imageNotFound} className="w-75 rounded mt-3" alt="Page_Not_Found" />
             <br/>
-            {/* <Link to="/" className="btn btn-secondary my-3">Go to Movies</Link> */}
             <button onClick={() => navigate(-1)} className="btn btn-secondary my-3">Go Back</button>
             </div>
         </NoLayout>
